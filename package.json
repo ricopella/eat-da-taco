@@ -1,0 +1,26 @@
+{
+  "name": "eat-da-taco",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricopella/eat-da-taco.git"
+  },
+  "author": "Narin Sundarabhaya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ricopella/eat-da-taco/issues"
+  },
+  "homepage": "https://github.com/ricopella/eat-da-taco#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.9",
+    "mysql": "^2.14.1"
+  }
+}
