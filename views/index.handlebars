@@ -1,26 +1,44 @@
-<h1>TACOS!</h1>
 
-<ul>
-  {{#each taco}}
-      <li>
-        {{this.taco_name}}
+<div class="flex-container">
 
-        <form action="/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="devoured" value="1">
-          <button type="submit">EAT Taco!</button>
-        </form>
+    <div class="align-item">
+        <h1>EAT-DA-TACOS!</h1>
+    </div>
 
-      </li>
-  {{/each}}
-</ul>
+    <div class="align-item">
+            <img src="assets/images/taco-.png" alt="Taco Image">
+    </div>
 
-<h2>Create A Taco!</h2>
+    <div class="align-item">
+        <div class="align-row">
+            <ul class="icon">
+              {{#each taco}}
+                  <li class="fork">
+                    {{this.taco_name}}
 
-<form class="create-update-form" action="/" method="POST">
+                    <form action="/{{this.id}}?_method=PUT" method="POST">
+                      <input type="hidden" name="devoured" value="1">
+                      <button type="submit">EAT Taco!</button>
+                    </form>
 
-  <div class="form-group">
-    <label for="ca">Taco Name:</label>
-    <input type="text" id="ta" name="taco_name">
-  </div>
-  <button type="submit">Add Taco</button>
-</form>
+                  </li>
+              {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <div class="align-item">
+        <div>
+            <h2>Create A Taco!</h2>
+            <form class="create-update-form" action="/" method="POST">
+
+                <div class="form-group">
+                  <label for="ca">Taco Name:</label>
+                  <input type="text" id="ta" name="taco_name">
+                </div>
+                <button type="submit">Add Taco</button>
+            </form>
+        </div>
+    </div>
+{{!-- end fullBody --}}
+</div>
