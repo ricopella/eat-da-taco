@@ -1,1 +1,26 @@
 <h1>TACOS!</h1>
+
+<ul>
+  {{#each taco}}
+      <li>
+        {{this.taco_name}}
+
+        <form action="/{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="devoured" value="1">
+          <button type="submit">EAT Taco!</button>
+        </form>
+
+      </li>
+  {{/each}}
+</ul>
+
+<h2>Create A Taco!</h2>
+
+<form class="create-update-form" action="/" method="POST">
+
+  <div class="form-group">
+    <label for="ca">Taco Name:</label>
+    <input type="text" id="ta" name="taco_name">
+  </div>
+  <button type="submit">Add Taco</button>
+</form>
