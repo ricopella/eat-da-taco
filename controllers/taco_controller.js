@@ -3,28 +3,25 @@ const taco = require('../models/burger');
 const router = express.Router();
 
 // root directory renders index.handblebars
-router.get("/", function(req, res) {
-    taco.all(function(data) {
+router.get("/", (req, res) => {
+    taco.all((data) => {
         let hbsObject = {
             taco: data
         };
-        console.log(hbsObject);
         res.render("index", hbsObject);
     });
 });
 
-router.post("/", function(req, res) {
+router.post("/", (req, res) => {
     taco.insert("taco_name", req.body.taco_name, function() {
         res.redirect("/");
     });
 });
 
-router.put("/:id", function(req, res) {
-    console.log(req);
-    var condition = "id = " + req.params.id;
-
-    console.log("condition", condition);
-
+router.put("/:id", (req, res) => {
+    // id of clicked button
+    let condition = "id = " + req.params.id;
+    // change value to true - aka devoured!
     taco.update({
         devoured: req.body.devoured
     }, condition, function() {

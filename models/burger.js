@@ -1,21 +1,17 @@
 const orm = require("../config/orm");
 
-const taco = {
-    all: function(cb) {
-        orm.selectAll("tacos", function(res) {
-            cb(res);
-        })
-    },
-    insert: function(cols, vals, cb) {
-        orm.insertOne("tacos", cols, vals, function(res) {
-            cb(res);
-        })
+// table to create/read/update
+const table = "tacos";
 
+const taco = {
+    all: (cb) => {
+        orm.selectAll(table, res => { cb(res) })
     },
-    update: function(objColVals, condition, cb) {
-        orm.updateOne("tacos", objColVals, condition, function(res) {
-            cb(res);
-        })
+    insert: (cols, vals, cb) => {
+        orm.insertOne(table, cols, vals, res => { cb(res) })
+    },
+    update: (objColVals, condition, cb) => {
+        orm.updateOne(table, objColVals, condition, res => { cb(res) })
     }
 }
 

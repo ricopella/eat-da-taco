@@ -26,6 +26,10 @@ body {
     width: auto;
 }
 
+.align-item.picture {
+    padding-left: 22%;
+}
+
 .align-row {
     flex-direction: row;
 }

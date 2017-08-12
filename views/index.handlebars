@@ -5,7 +5,7 @@
         <h1>EAT-DA-TACOS!</h1>
     </div>
 
-    <div class="align-item">
+    <div class="align-item picture">
             <img src="assets/images/taco-.png" alt="Taco Image">
     </div>
 
@@ -15,12 +15,10 @@
               {{#each taco}}
                   <li class="fork">
                     {{this.taco_name}}
-
                     <form action="/{{this.id}}?_method=PUT" method="POST">
                       <input type="hidden" name="devoured" value="1">
                       <button type="submit">EAT Taco!</button>
                     </form>
-
                   </li>
               {{/each}}
             </ul>
@@ -31,7 +29,6 @@
         <div>
             <h2>Create A Taco!</h2>
             <form class="create-update-form" action="/" method="POST">
-
                 <div class="form-group">
                   <label for="ca">Taco Name:</label>
                   <input type="text" id="ta" name="taco_name">
@@ -40,5 +37,5 @@
             </form>
         </div>
     </div>
-{{!-- end fullBody --}}
+{{!-- end flex-container --}}
 </div>
