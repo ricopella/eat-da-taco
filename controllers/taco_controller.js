@@ -14,8 +14,8 @@ router.get("/", (req, res) => {
 
 router.post("/", (req, res) => {
     let tacoName = Object.keys(req.body);
-
     taco.insert("taco_name", tacoName[0], function() {
+        console.log("why no reset?");
         res.redirect("/");
     });
 });

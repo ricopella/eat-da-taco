@@ -18,7 +18,6 @@ header h1 {
 /* Content Row */
 
 .flex-container {
-    height: 100%;
     padding-left: 4%;
     padding-right: 4%;
     margin-top: 2%;
@@ -51,8 +50,6 @@ header h1 {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(92, 184, 92, 1) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#5cb85c', GradientType=0);
-    /* IE6-9 */
-    /* IE6-9 */
 }
 
 .align-item.devoured ul {
@@ -67,8 +64,6 @@ header h1 {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(217, 83, 79, 1) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#d9534f', GradientType=0);
-    /* IE6-9 */
-    /* IE6-9 */
 }
 
 h2 {
