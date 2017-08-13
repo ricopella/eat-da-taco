@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    margin-top: 5%;
+    margin-top: 2%;
     text-align: center;
 }
 
@@ -138,4 +138,13 @@ input#ta {
 
 .modal-header {
     background-color: red;
+}
+
+@media screen and (max-width: 1000px) {
+    .align-item {
+        width: 100%;
+    }
+    #addTaco {
+        margin-bottom: 4%;
+    }
 }
