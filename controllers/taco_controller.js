@@ -1,5 +1,5 @@
 const express = require('express');
-const taco = require('../models/burger');
+const taco = require('../models/taco');
 const router = express.Router();
 
 // root directory renders index.handblebars
