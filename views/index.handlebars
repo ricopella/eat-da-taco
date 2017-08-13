@@ -18,7 +18,7 @@
               {{#unless this.devoured}}
                   <li class="fork">
                     {{this.taco_name}}
-                    <form action="/{{this.id}}?_method=PUT" method="POST">
+                    <form action="/{{this.id}}?=PUT" method="POST">
                       <input type="hidden" name="devoured" value="1">
                       <button class="dev" type="submit">Devour it!</button>
                     </form>
