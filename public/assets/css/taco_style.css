@@ -2,17 +2,27 @@ html,
 body {
     height: 100%;
     background-color: #009688;
+    font-family: 'Archivo', sans-serif;
 }
 
 header {
+    margin-top: 5%;
     text-align: center;
 }
 
+header h1 {
+    font-size: 60px;
+}
+
+
+/* Content Row */
+
 .flex-container {
-    height: 100%;
     padding-left: 4%;
     padding-right: 4%;
-    margin: 0;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -28,8 +38,37 @@ header {
     width: 32%;
 }
 
-.align-item.eat {
+.align-item.eat ul {
     text-align: right;
+    border: 8px solid green;
+    border-radius: 12px;
+    padding: 4% 4% 4% 4%;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(92, 184, 92, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(92, 184, 92, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(92, 184, 92, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#5cb85c', GradientType=0);
+}
+
+.align-item.devoured ul {
+    border: 8px solid red;
+    border-radius: 12px;
+    padding: 4% 6% 4% 6%;
+    text-decoration: line-through;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(217, 83, 79, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(217, 83, 79, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(217, 83, 79, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#d9534f', GradientType=0);
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
 }
 
 ul {
@@ -38,7 +77,7 @@ ul {
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 2%;
     font-size: 25px;
 }
 
@@ -53,16 +92,50 @@ li:before {
 }
 
 img {
-    width: 20%;
+    width: 15%;
 }
 
 .align-item.addTaco {
     text-align: center;
 }
 
+button {
+    padding: 2% 8% 2% 8%;
+    border-radius: 8px;
+}
+
+button.dev {
+    background-color: #d9534f;
+    box-shadow: 4px 3px 2px #2E2E2E;
+    border: none;
+}
+
 #addTaco {
     margin-top: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 2% 8% 2% 8%;
     width: 59%;
+    font-size: 25px;
+    background-color: #5cb85c;
+    box-shadow: 4px 3px 2px #2E2E2E;
+    border: border-style color;
+    border: none;
+}
+
+button.dev:hover,
+#addTaco:hover {
+    background-color: #ffffff;
+}
+
+input#ta {
+    width: 100%;
+    height: 45px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 8px;
+    padding: 2% 2% 2% 2%;
+    font-size: 20px;
+}
+
+.modal-header {
+    background-color: red;
 }

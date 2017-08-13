@@ -20,7 +20,7 @@
                     {{this.taco_name}}
                     <form action="/{{this.id}}?_method=PUT" method="POST">
                       <input type="hidden" name="devoured" value="1">
-                      <button type="submit">Devour it!</button>
+                      <button class="dev" type="submit">Devour it!</button>
                     </form>
                   </li>
                   {{/unless}}
@@ -30,18 +30,17 @@
 
     <div class="align-item addTaco">
         <div>
-            <h2>Create A Taco!</h2>
+            <h2>Create a Taco!</h2>
             <form class="create-update-form" action="/" method="POST">
                 <div class="form-group">
-                  <label for="ca">Taco Name:</label>
-                  <input type="text" id="ta" name="taco_name">
+                  <input type="text" id="ta" name="taco_name" placeholder="Taco Name">
                 </div>
-                <button id="addTaco" "type="submit">Add Taco</button>
+                <button id="addTaco" type="submit">Add Taco</button>
             </form>
         </div>
     </div>
 
-    <div class="align-item">
+    <div class="align-item devoured">
         <h2>Devoured</h2>
             <ul class="icon">
                 {{#each taco}}
@@ -53,5 +52,4 @@
               {{/each}}
             </ul>
     </div>
-{{!-- end flex-container --}}
 </div>
