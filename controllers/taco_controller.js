@@ -13,7 +13,9 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-    taco.insert("taco_name", req.body.taco_name, function() {
+    let tacoName = Object.keys(req.body);
+
+    taco.insert("taco_name", tacoName[0], function() {
         res.redirect("/");
     });
 });

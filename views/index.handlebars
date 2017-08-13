@@ -36,7 +36,7 @@
                   <label for="ca">Taco Name:</label>
                   <input type="text" id="ta" name="taco_name">
                 </div>
-                <button id="addTaco" "type="submit">Add Taco</button>
+                <button id="addTaco" type="submit">Add Taco</button>
             </form>
         </div>
     </div>
@@ -53,5 +53,22 @@
               {{/each}}
             </ul>
     </div>
+
+<div class="modal fade" id="incompleteForm" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">ERROR</h4>
+                </div>
+                <div class="modal-body">
+                    <p>PLEASE MAKE SURE TO ENTER YOUR INFORMATION</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
 {{!-- end flex-container --}}
 </div>
