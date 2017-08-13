@@ -4,31 +4,32 @@ body {
     background-color: #009688;
 }
 
+header {
+    text-align: center;
+}
+
 .flex-container {
     height: 100%;
-    padding: 0;
+    padding-left: 4%;
+    padding-right: 4%;
     margin: 0;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
 }
 
 .align-item {
-    text-align: center;
+    width: 32%;
 }
 
-
-/* .align-item.picture {
-    padding-left: 22%;
-} */
-
-.align-row {
-    flex-direction: row;
+.align-item.eat {
+    text-align: right;
 }
 
 ul {
@@ -41,6 +42,10 @@ li {
     font-size: 25px;
 }
 
+form {
+    display: inline;
+}
+
 li:before {
     font-family: 'FontAwesome';
     content: '\f0f5';
@@ -48,5 +53,16 @@ li:before {
 }
 
 img {
-    width: 35%;
+    width: 20%;
+}
+
+.align-item.addTaco {
+    text-align: center;
+}
+
+#addTaco {
+    margin-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 59%;
 }

@@ -2,17 +2,13 @@
 
 ### Overview
 
-Coming Soon
-
-# Getting Started
-
 * Eat-Da-Taco! is a restaurant app that lets users input the names of tacos they'd like to eat.
 
-* Whenever a user submits a taco's name, it's displayed on the left side of the page -- waiting to be devoured.
+* Whenever a user submits a taco's name, it's displayed on the page -- waiting to be devoured.
 
-* Each taco in the waiting area also has a `Devour it!` button. When the user clicks it, the taco will move to the right side of the page.
+* Each taco in the waiting area also has a `Devour it!` button. When the user clicks it, the taco will.
 
-* Your app will store every taco in a database, whether devoured or not.
+* Every taco is saved in a database, whether devoured or not.
 
 # Packages Used
 

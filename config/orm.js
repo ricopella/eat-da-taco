@@ -15,8 +15,8 @@ function objToSql(ob) {
 
 const orm = {
     selectAll: (tableInput, cb) => {
-        // pull all rows in table except for devoured tacos
-        let queryString = `SELECT * FROM ` + tableInput + ` WHERE devoured = 0` + ";";
+        // pull all rows in table
+        let queryString = `SELECT * FROM ` + tableInput + ";";
         connection.query(queryString, (err, result) => {
             if (err) {
                 throw err;
