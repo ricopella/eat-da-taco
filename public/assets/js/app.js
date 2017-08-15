@@ -1,5 +1,5 @@
-$("#addTaco").on("click", function(event) {
-    event.preventDefault();
+$("#addTaco").on("click", function() {
+    // event.preventDefault();
 
     let tacoName = $("#ta").val();
 
